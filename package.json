@@ -1,0 +1,22 @@
+{
+  "name": "figma-badges",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build-docs": "rm -rf .next && export BUILD_DOCS=true && next build && rm -rf docs && next export -o docs && touch docs/.nojekyll; unset BUILD_DOCS"
+  },
+  "dependencies": {
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-syntax-highlighter": "^13.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "@types/react": "^16.9.48",
+    "typescript": "^4.0.2"
+  }
+}
