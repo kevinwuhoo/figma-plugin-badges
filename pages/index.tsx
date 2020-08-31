@@ -165,7 +165,9 @@ function BadgeHTML({ badgeUrl, pluginUrl }) {
 }
 
 function BadgeMarkdown({ badgeUrl, pluginUrl }) {
-  return <>{`[![](${badgeUrl})](${pluginUrl})`}</>;
+  return (
+    <>{`[![](https://img.shields.io/endpoint?url=${badgeUrl})](${pluginUrl})`}</>
+  );
 }
 
 function Header() {
